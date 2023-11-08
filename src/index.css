@@ -1,0 +1,235 @@
+/* Container holding the image and the text */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif !important;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: blue;
+  text-emphasis: bolder;
+  font-size: 30px;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 130px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 1px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* contatc css starts from here*/
+
+.profile-picture,
+.profile-details {
+  flex: 1;
+  font-size: 16px;
+  font-size: 2.5vw;
+}
+
+.profile-wrapper {
+  background: white;
+  color: black;
+  height: 100vh;
+  display: flex;
+}
+.support-contact {
+  margin-top: 3rem;
+}
+.cont_num {
+  margin-top: 2rem !important;
+}
+
+img#profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.profile-details > div {
+  padding: 0em 1em 1em 1em;
+}
+
+div.profile-details > div > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.profile-details > div > ul li {
+  margin: 8px 0;
+  display: block;
+}
+
+div.profile-details > div > ul > li > div:nth-child(1) {
+  font-weight: 600;
+  font-size: 16px;
+  font-size: 2vw;
+  width: 30%;
+  display: inline-block;
+}
+
+div.profile-details > div > ul > li > div:nth-child(2) {
+  font-size: 16px;
+  font-size: 2vw;
+  text-align: left;
+  width: 68%;
+  display: inline-block;
+}
+
+.contact-action {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+}
+
+.back-action {
+  position: fixed;
+  top: 20px;
+  left: 15px;
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+}
+
+.contact-action .item,
+.back-action .item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: white;
+  background: transparent;
+  box-shadow: 1px 1px 5px #000;
+}
+
+.back-action .item {
+  font-size: 2em;
+}
+
+.item:hover {
+  color: #013864;
+  background: #fff;
+  box-shadow: 1px 1px 5px #000;
+}
+.profile-notes {
+  margin-top: 7rem;
+}
+.profile-number {
+  margin-top: 1.5rem !important;
+  font-size: 1.89rem;
+}
+.profile-notes-copyright {
+  font-size: 1.3rem;
+  margin-top: 6rem !important;
+}
+.left_bottom_content {
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .image_wrappere {
+    width: 35% !important;
+    margin-top: 6.5px !important;
+  }
+  .profile-number {
+    font-size: inherit !important;
+  }
+  .profile-notes-copyright {
+    font-size: inherit !important;
+    margin-top: 0rem !important;
+  }
+  .left_bottom_content {
+    font-size: 0.5rem !important;
+    margin-top: 1rem !important;
+  }
+  .left_bottom_content_starlight {
+    font-size: 1rem !important;
+    margin-top: 0rem;
+  }
+  .text-white div h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .profile-wrapper {
+    flex-direction: column;
+  }
+  .support-contact {
+    margin-top: 1rem !important;
+  }
+
+  .back-action,
+  .contact-action {
+    width: 10em;
+    height: 10em;
+  }
+
+  .back-action .item {
+    font-size: 4em;
+  }
+
+  .contact-action .item {
+    font-size: 7em;
+  }
+
+  .profile-details {
+    font-size: 5vw;
+    min-height: 60vh;
+  }
+
+  div.profile-details > div > ul > li > div:nth-child(1),
+  div.profile-details > div > ul > li > div:nth-child(2) {
+    font-size: 5vw;
+  }
+
+  img#profile-picture {
+    max-height: 40vh;
+  }
+  .bottom-left {
+    bottom: 42px !important;
+  }
+}
+
+/* .Logo_web {
+  width: 331px !important;
+  height: fit-content !important;
+} */

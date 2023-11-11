@@ -12,7 +12,12 @@ export const App = () => {
   return (
     <div>
       <div className="container">
-        <img src={bgWhiteImg} alt="Snow" style={{ width: "100%" }} />
+        <img
+          src={bgWhiteImg}
+          className="back_img_dark"
+          alt="Snow"
+          style={{ width: "100%" }}
+        />
         <div
           className="bottom-left "
           style={{
@@ -34,7 +39,10 @@ export const App = () => {
                 Starlight Digital LLP
               </h1>{" "}
             </div>
-            <h4 style={{ marginTop: "1.5rem" }} className="left_bottom_content">
+            <h4
+              style={{ marginTop: "1.5rem" }}
+              className="left_bottom_content authorised_content"
+            >
               Authorised DPP Partner of Apple Products in India
               <h4 style={{ display: "inline" }}></h4>
             </h4>

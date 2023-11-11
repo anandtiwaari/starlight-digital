@@ -374,6 +374,9 @@ div.profile-details > div > ul > li > div:nth-child(2) {
   margin-top: 1rem;
 }
 @media (max-width: 800px) {
+  .back_img_dark {
+    height: 643px !important;
+  }
   .centered {
     position: absolute;
     top: 39%;
@@ -399,8 +402,11 @@ div.profile-details > div > ul > li > div:nth-child(2) {
   }
   .bottom-left {
     position: absolute;
-    bottom: 16px;
+    bottom: 125px;
     left: 16px;
+  }
+  .authorised_content {
+    margin-top: 2rem !important;
   }
   .welcome_two {
     font-size: 22px !important;

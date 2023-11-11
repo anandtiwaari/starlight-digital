@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif !important;
+  /* font-family: "Roboto", sans-serif !important; */
+  font-family: "Old Standard TT", serif;
 }
 .container {
   position: relative;
@@ -16,7 +17,7 @@
 /* Bottom left text */
 .bottom-left {
   position: absolute;
-  bottom: 130px;
+  bottom: 267px;
   left: 16px;
 }
 
@@ -44,7 +45,7 @@
 /* Centered text */
 .centered {
   position: absolute;
-  top: 20%;
+  top: 26%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -55,20 +56,23 @@
 .profile-details {
   flex: 1;
   font-size: 16px;
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
 }
 
 .profile-wrapper {
   background: white;
   color: black;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
+  align-items: center;
+  padding-bottom: 100px;
 }
 .support-contact {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 .cont_num {
-  margin-top: 2rem !important;
+  /* margin-top: 2rem !important; */
+  margin-bottom: 24px;
 }
 
 img#profile-picture {
@@ -92,21 +96,21 @@ div.profile-details > div > ul li {
   display: block;
 }
 
-div.profile-details > div > ul > li > div:nth-child(1) {
+/* div.profile-details > div > ul > li > div:nth-child(1) {
   font-weight: 600;
   font-size: 16px;
   font-size: 2vw;
   width: 30%;
   display: inline-block;
-}
+} */
 
-div.profile-details > div > ul > li > div:nth-child(2) {
+/* div.profile-details > div > ul > li > div:nth-child(2) {
   font-size: 16px;
   font-size: 2vw;
   text-align: left;
   width: 68%;
   display: inline-block;
-}
+} */
 
 .contact-action {
   position: fixed;
@@ -157,16 +161,51 @@ div.profile-details > div > ul > li > div:nth-child(2) {
 .profile-number {
   margin-top: 1.5rem !important;
   font-size: 1.89rem;
+  margin-bottom: 24px !important;
 }
 .profile-notes-copyright {
-  font-size: 1.3rem;
-  margin-top: 6rem !important;
+  font-size: 14px;
+  font-weight: 400;
+  /* margin-top: 6rem !important; */
+  list-style: none;
+  padding-left: 56px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .left_bottom_content {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
-
-@media (max-width: 800px) {
+.newdiv {
+  width: 80%;
+  margin: auto;
+}
+.contact-info-title {
+  text-align: center;
+  font-size: 32px !important;
+  font-weight: 200;
+  margin-bottom: 100px;
+  padding-top: 70px;
+}
+.profile-name {
+  font-size: 22px !important;
+  font-weight: 400;
+}
+.profile-number {
+  font-size: 16px;
+  font-weight: 400;
+}
+.profile-primary-email {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+#profile-primary-email {
+  line-height: 28.8px;
+}
+.profile-email .cont_num {
+  font-size: 22px !important;
+  font-weight: 400;
+}
+/* @media (max-width: 800px) {
   .image_wrappere {
     width: 35% !important;
     margin-top: 6.5px !important;
@@ -216,20 +255,164 @@ div.profile-details > div > ul > li > div:nth-child(2) {
     min-height: 60vh;
   }
 
-  div.profile-details > div > ul > li > div:nth-child(1),
-  div.profile-details > div > ul > li > div:nth-child(2) {
-    font-size: 5vw;
-  }
-
   img#profile-picture {
     max-height: 40vh;
   }
   .bottom-left {
     bottom: 42px !important;
   }
-}
+} */
 
+/* div.profile-details > div > ul > li > div:nth-child(1),
+div.profile-details > div > ul > li > div:nth-child(2) {
+  font-size: 5vw;
+} */
 /* .Logo_web {
   width: 331px !important;
   height: fit-content !important;
 } */
+
+/* section two custom css */
+.section_two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.info-contact {
+  width: 50%;
+  margin-top: -43px;
+}
+.contact_info {
+  text-align: center;
+}
+.image-width {
+  width: 50%;
+}
+.image-width img {
+  width: 100%;
+}
+.contact_info {
+  text-align: center;
+  font-size: 32px !important;
+  font-weight: 200;
+  margin-bottom: 100px;
+  padding-top: 70px;
+}
+.office_addr {
+  font-size: 22px !important;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.contact_num {
+  font-size: 22px !important;
+  font-weight: 400;
+  margin-bottom: 24px;
+  list-style: none;
+}
+.office_address {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  width: 95%;
+  list-style: none;
+}
+.address_wrapper {
+  margin-bottom: 40px;
+}
+.profile-primary-email {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+#profile-primary-email {
+  line-height: 28.8px;
+}
+.profile-email .cont_num {
+  font-size: 22px !important;
+  font-weight: 400;
+}
+.chat-button-container {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 999; /* Ensure it's above other elements */
+}
+
+/* Chat Button Styling */
+.chat-button {
+  /* Green color, change as needed */
+  /* background-color: #4caf50; */
+  /* color: white; */
+  border: none;
+  /* padding: 9px 9px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.welcome_two {
+  font-size: 35px !important;
+  font-weight: 200 !important;
+  color: black;
+}
+.left_bottom_content_starlight {
+  font-size: 35px !important;
+  font-weight: 200 !important;
+  color: black;
+}
+.left_bottom_content {
+  font-size: 35px !important;
+  font-weight: 200 !important;
+  color: black;
+}
+.image_wrappere .Logo_web {
+  margin-top: 1rem;
+}
+@media (max-width: 800px) {
+  .centered {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image-width {
+    width: 100%;
+  }
+  .info-contact {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .section_two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+  .welcome_two {
+    font-size: 22px !important;
+    font-weight: 200 !important;
+  }
+  .left_bottom_content_starlight {
+    font-size: 22px !important;
+    font-weight: 200 !important;
+  }
+  .left_bottom_content {
+    font-size: 22px !important;
+    font-weight: 200 !important;
+    width: 80%;
+  }
+}

@@ -1,14 +1,18 @@
 import React from "react";
 import blackImg from "./assets/black_bg.jpg";
+import bgWhiteImg from "../src/assets/bg-white.jpg";
 // import AppleImg from "./assets/Apple_products_image.png";
-import AppleImg from "./assets/Apple_vaala.png";
+import AppleImg from "./assets/Macbook_image_up.png";
 import StarLightLogo from "./assets/Logo_updated.png";
+import Logo_upper from "./assets/Logo_upper_updated.png";
 import contactImage from "./assets/contact_image.webp";
+import whatSappIcon from "../src/assets/WhatsApp_icon.png";
+
 export const App = () => {
   return (
     <div>
       <div className="container">
-        <img src={blackImg} alt="Snow" style={{ width: "100%" }} />
+        <img src={bgWhiteImg} alt="Snow" style={{ width: "100%" }} />
         <div
           className="bottom-left "
           style={{
@@ -19,7 +23,7 @@ export const App = () => {
         >
           <div className="text-white" style={{ color: "white" }}>
             <div>
-              <h2> Welcome to</h2>
+              <h2 className="welcome_two"> Welcome to</h2>
             </div>
             <div>
               {" "}
@@ -27,7 +31,7 @@ export const App = () => {
                 Starlight Digital LLP
               </h1>{" "}
             </div>
-            <h4 style={{ marginTop: "2rem" }} className="left_bottom_content">
+            <h4 style={{ marginTop: "1.5rem" }} className="left_bottom_content">
               Authorised DPP Partner of{" "}
               <h4 style={{ color: "rgb(128 155 255)", display: "inline" }}>
                 Apple Products in India
@@ -42,7 +46,7 @@ export const App = () => {
             style={{ width: "70%", margin: "auto", marginRight: "inherit" }}
           >
             <img
-              src={StarLightLogo}
+              src={Logo_upper}
               alt=""
               style={{ width: "100%", height: "100%" }}
               className="Logo_web"
@@ -63,32 +67,28 @@ export const App = () => {
           </div>
         </div>
       </div>
-      <div className="newdiv ">
-        {/* <div className="back-action">
-          <div className="item">
-            <i className="fa fa-arrow-left"></i>
-          </div>
-        </div> */}
-        <div className="profile-wrapper">
-          <div className="profile-details">
+      <div>
+        <h1 className="contact_info">Contact Information</h1>
+        <div className="section_two">
+          <div className="info-contact">
             <div>
-              <div className="profile-title">
-                <h3 id="profile-name" className="profile-name">
-                  Office Address
-                </h3>
+              <div>
+                <h3 className="office_addr">Office Address</h3>
               </div>
               <ul>
-                <li className="profile-number">
-                  108, Dwarkesh Building, Near Handloom Corner, Main Road,
-                  Surendranagar - 363001 Gujarat India
-                </li>
-                <li className="profile-number">
-                  809, Sun Avenue Onc, Near Golden Tulip Bungalows, Ambawadi,
-                  Ahmedabad - 380015 Gujarat India
-                </li>
-                <li className="profile-email">
-                  <h3 className="cont_num">Contact No</h3>
-                  <div className="support-contact">
+                <div className="address_wrapper">
+                  <li className="office_address">
+                    108, Dwarkesh Building, Near Handloom Corner, Main Road,
+                    Surendranagar - 363001 Gujarat India
+                  </li>
+                  <li className="office_address">
+                    809, Sun Avenue Onc, Near Golden Tulip Bungalows, Ambawadi,
+                    Ahmedabad - 380015 Gujarat India
+                  </li>
+                </div>
+                <li style={{ listStyle: "none" }}>
+                  <h3 className="contact_num">Contact No</h3>
+                  <div className="profile-primary-email">
                     <div id="profile-primary-email">
                       Support +91 94266 10045
                     </div>
@@ -97,18 +97,11 @@ export const App = () => {
                     </div>
                   </div>
                 </li>
-                {/* <li className="profile-email">
-                  <div>Secondary Email</div>
-                  <div id="profile-secondary-email">johndoe@johndoe.com</div>
-                </li> */}
-                <li className="profile-notes-copyright">
-                  Copyright © 2023 Starlight Digital LLP - All Rights Reserved.
-                </li>
               </ul>
             </div>
           </div>
-          <div className="profile-picture">
-            <img id="profile-picture" src={contactImage} />
+          <div className="image-width">
+            <img src={contactImage} />
           </div>
         </div>
         {/* <div className="contact-action">
@@ -116,6 +109,17 @@ export const App = () => {
             <i className="fa fa-wrench"></i>
           </div>
         </div> */}
+      </div>
+      <li className="profile-notes-copyright">
+        Copyright © 2023 Starlight Digital LLP - All Rights Reserved.
+      </li>
+      <div class="chat-button-container">
+        <button class="chat-button">
+          {" "}
+          <a href="https://wa.me/+918799150045?text=Hello%20there!">
+            <img src={whatSappIcon} alt="" style={{ width: "55px" }} />
+          </a>
+        </button>
       </div>
     </div>
   );

@@ -21,7 +21,10 @@ export const App = () => {
             textAlign: "left",
           }}
         >
-          <div className="text-white" style={{ color: "white" }}>
+          <div
+            className="text-white"
+            style={{ color: "white", marginLeft: "3.5rem" }}
+          >
             <div>
               <h2 className="welcome_two"> Welcome to</h2>
             </div>
@@ -32,10 +35,8 @@ export const App = () => {
               </h1>{" "}
             </div>
             <h4 style={{ marginTop: "1.5rem" }} className="left_bottom_content">
-              Authorised DPP Partner of{" "}
-              <h4 style={{ color: "rgb(128 155 255)", display: "inline" }}>
-                Apple Products in India
-              </h4>
+              Authorised DPP Partner of Apple Products in India
+              <h4 style={{ display: "inline" }}></h4>
             </h4>
           </div>
         </div>
@@ -90,10 +91,10 @@ export const App = () => {
                   <h3 className="contact_num">Contact No</h3>
                   <div className="profile-primary-email">
                     <div id="profile-primary-email">
-                      Support +91 94266 10045
+                      Support +91 87991 50045
                     </div>
                     <div id="profile-primary-email">
-                      Support +91 87991 50045
+                      Support +91 72030 31269
                     </div>
                   </div>
                 </li>
